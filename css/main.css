@@ -1,0 +1,52 @@
+body{
+	background-color: black;
+}
+
+@keyframes landing {
+	0% {
+		transform: scale(.1);
+
+	}
+	50% {
+
+	}
+	100% { 
+		transform: scale(1.0);
+
+	}
+}
+#front {
+		top: 10%;
+		width:100%;
+        height: auto;
+        z-index:5;
+        position:absolute;
+        animation: landing 5s ease-in-out;
+      
+
+
+}
+/*date*/
+@keyframes date {
+			0% {
+				opacity: 0;
+			}
+			50% {
+				opacity: .5;
+			}
+			100% {
+				opacity: 1;
+			}
+		}
+.date {
+	vertical-align: bottom;
+	color: white;
+	text-shadow: 4px 4px #5a0101;
+	animation-name: date;
+	position: relative;
+	animation: date 5s
+	ease-in 0s;
+	text-align: center;
+	font-size: 20pt;
+			
+		}
